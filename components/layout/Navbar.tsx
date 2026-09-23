@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { assets } from "@/lib/assets";
 import { navLinks } from "@/lib/content";
-import { Pill } from "@/components/ui/Button";
 
 export function Navbar() {
   return (
@@ -37,14 +36,19 @@ export function Navbar() {
           ))}
         </ul>
 
-        <Pill
+        <a
           href="#"
-          size="sm"
-          className="!px-5 !py-3"
-          icon={<img src={assets.icons.arrowNarrowRight} alt="" className="size-4" />}
+          className="group/linkedin inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-ink bg-ink px-5 py-3 text-paper"
         >
-          Linkedin
-        </Pill>
+          <span className="text-sm transition-[font-size] duration-300 ease-out group-hover/linkedin:text-base">
+            Linkedin
+          </span>
+          <img
+            src={assets.icons.arrowNarrowRight}
+            alt=""
+            className="size-4 visible opacity-100 transition-[visibility,opacity,transform] duration-300 ease-out group-hover/linkedin:invisible group-hover/linkedin:translate-x-3 group-hover/linkedin:opacity-0"
+          />
+        </a>
       </nav>
     </header>
   );

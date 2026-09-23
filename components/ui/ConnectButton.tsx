@@ -16,14 +16,14 @@ export function ConnectButton() {
       <img
         src="/assets/connect-button-default.svg"
         alt=""
-        className={`[grid-area:1/1] transition-opacity duration-500 ease-in-out w-[1072] h-[576] ${
+        className={`[grid-area:1/1] transition-opacity duration-500 ease-in-out w-full ${
           active ? "opacity-0" : "opacity-100"
         }`}
       />
       <img
         src="/assets/connect-button-active.svg"
         alt=""
-        className={`[grid-area:1/1] transition-opacity duration-500 ease-in-out w-[1072] h-[576] ${
+        className={`[grid-area:1/1] transition-opacity duration-500 ease-in-out w-full ${
           active ? "opacity-100" : "opacity-0"
         }`}
       />

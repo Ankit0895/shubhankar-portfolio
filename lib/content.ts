@@ -85,7 +85,21 @@ export const whatIfStories: { id: string; label: string; title: string; status: 
   { id: "story-6", label: "STORY 6", title: "What if IRCTC actually felt premium?", status: "soon" },
 ];
 
-export const microLabItems = Array.from({ length: 6 }, (_, i) => ({ id: `micro-lab-${i + 1}` }));
+export type MicroLabItem = {
+  id: string;
+  type: "video" | "image";
+  key: keyof typeof assets.microLab;
+};
+
+export const microLabItems: MicroLabItem[] = [
+  { id: "micro-lab-3", type: "video", key: "video3" },
+  { id: "micro-lab-2", type: "video", key: "video2" },
+  { id: "micro-lab-1", type: "video", key: "video1" },
+  { id: "micro-lab-4", type: "image", key: "image1" },
+  { id: "micro-lab-5", type: "image", key: "image2" },
+  { id: "micro-lab-6", type: "image", key: "image3" },
+  { id: "micro-lab-7", type: "image", key: "image3" },
+];
 
 export const aboutBioPills = ["5+ years", "Bachelor's of Design (B.Des)"] as const;
 

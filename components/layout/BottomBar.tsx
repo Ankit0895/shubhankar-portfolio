@@ -31,7 +31,7 @@ export function BottomBar() {
           </a>
         </div>
 
-        <div className="flex items-center gap-4 sm:gap-6">
+        <div className="flex items-center gap-[60px]">
           <a href="#" aria-label="LinkedIn">
             <img src={assets.icons.linkedinBadge} alt="" className="size-10" />
           </a>

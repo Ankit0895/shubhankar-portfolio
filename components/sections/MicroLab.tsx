@@ -14,13 +14,28 @@ export function MicroLab() {
 
       <div className="relative w-full overflow-hidden bg-paper [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
         <div className="micro-lab-track flex w-max gap-5">
-          {loopItems.map((item, i) => (
-            <div
-              key={`${item.id}-${i}`}
-              className="aspect-[3/4] w-[70vw] shrink-0 rounded-[20px] bg-accent-blue sm:w-[280px]"
-              aria-hidden
-            />
-          ))}
+          {loopItems.map((item, i) =>
+            item.type === "video" ? (
+              <video
+                key={`${item.id}-${i}`}
+                className="aspect-845/500 w-[85vw] shrink-0 rounded-[20px] bg-accent-blue object-cover sm:w-211.25"
+                src={assets.microLab[item.key]}
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-hidden
+              />
+            ) : (
+              <img
+                key={`${item.id}-${i}`}
+                className="aspect-845/500 w-[85vw] shrink-0 rounded-[20px] bg-accent-blue object-cover sm:w-211.25"
+                src={assets.microLab[item.key]}
+                alt=""
+                aria-hidden
+              />
+            )
+          )}
         </div>
       </div>
 
@@ -39,7 +54,7 @@ export function MicroLab() {
         >
           <img src={assets.icons.chevronRightWhite} alt="" className="size-5" />
         </button>
-        <a href="#" className="text-[18px] font-light text-ink">
+        <a href="/micro-lab" className="text-[18px] font-light text-ink">
           View all
         </a>
       </div>

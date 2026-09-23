@@ -176,4 +176,12 @@ export const assets = {
       finalTakeawayBg: "/assets/work/zoho-marketing-experience/final-takeaway-bg.svg",
     },
   },
+  microLab: {
+    video1: "/assets/micro-lab/micro-lab-1.mp4",
+    video2: "/assets/micro-lab/micro-lab-2.mp4",
+    video3: "/assets/micro-lab/micro-lab-3.mp4",
+    image1: "/assets/micro-lab/micro-lab-4.svg",
+    image2: "/assets/micro-lab/micro-lab-5.svg",
+    image3: "/assets/micro-lab/micro-lab-6.svg",
+  },
 } as const;

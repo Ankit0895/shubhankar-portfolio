@@ -1,7 +1,5 @@
-<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group">
-<path id="Vector" d="M4.99997 0H35V30H4.99997V0Z" fill="#ECEFF1"/>
-<path id="Vector_2" d="M20.002 18.1548L35.002 29.9998V6.61477L20.002 18.1548Z" fill="#CFD8DC"/>
-<path id="Vector_3" d="M36.25 2.56859e-05H35L20 11.845L5 2.56859e-05H3.75C1.68 2.56859e-05 0 1.68003 0 3.75003V26.25C0 28.32 1.68 30 3.75 30H5V6.61503L20 18.1525L35 6.61253V30H36.25C38.32 30 40 28.32 40 26.25V3.75003C40 1.68003 38.32 2.56859e-05 36.25 2.56859e-05Z" fill="#F44336"/>
-</g>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 5L35 5V35H5L5 5Z" fill="#ECEFF1"/>
+<path d="M20.002 23.1547L35.002 34.9997V11.6147L20.002 23.1547Z" fill="#CFD8DC"/>
+<path d="M36.25 5H35L20 16.845L5 5H3.75C1.68 5 0 6.68 0 8.75L0 31.25C0 33.32 1.68 35 3.75 35H5L5 11.615L20 23.1525L35 11.6125V35H36.25C38.32 35 40 33.32 40 31.25V8.75C40 6.68 38.32 5 36.25 5Z" fill="#F44336"/>
 </svg>
