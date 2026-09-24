@@ -71,9 +71,23 @@ export const projects: Project[] = [
 
 export type WhatIfStatus = "live" | "soon";
 
-export const whatIfStories: { id: string; label: string; title: string; status: WhatIfStatus }[] = [
-  { id: "story-1", label: "STORY 1", title: "What if WhatsApp had message scheduling feature.", status: "live" },
-  { id: "story-2", label: "STORY 2", title: "What if google Map had group ride feature?", status: "live" },
+export type WhatIfStory = {
+  id: string;
+  label: string;
+  title: string;
+  status: WhatIfStatus;
+  previewImage?: keyof typeof assets.whatIf;
+};
+
+export const whatIfStories: WhatIfStory[] = [
+  {
+    id: "story-1",
+    label: "STORY 1",
+    title: "What if WhatsApp had message scheduling feature.",
+    status: "live",
+    previewImage: "whatsappScheduling",
+  },
+  { id: "story-2", label: "STORY 2", title: "What if google Map had group ride feature?", status: "soon" },
   { id: "story-3", label: "STORY 3", title: "What if Uber let friends split rides before booking?", status: "soon" },
   {
     id: "story-4",

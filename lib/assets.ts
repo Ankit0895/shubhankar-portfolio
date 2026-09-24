@@ -184,4 +184,7 @@ export const assets = {
     image2: "/assets/micro-lab/micro-lab-5.svg",
     image3: "/assets/micro-lab/micro-lab-6.svg",
   },
+  whatIf: {
+    whatsappScheduling: "/assets/what-if/whatsapp-scheduling.svg",
+  },
 } as const;

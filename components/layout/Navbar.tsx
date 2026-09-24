@@ -38,15 +38,15 @@ export function Navbar() {
 
         <a
           href="#"
-          className="group/linkedin inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border border-ink bg-ink px-5 py-3 text-paper"
+          className="group/linkedin relative inline-flex h-16 w-34 items-center whitespace-nowrap rounded-full border border-ink bg-ink px-5 py-3 text-paper overflow-hidden"
         >
-          <span className="text-sm transition-[font-size] duration-300 ease-out group-hover/linkedin:text-base">
+          <span className="absolute top-1/2 left-5 -translate-y-1/2 text-[16px] transition-[left,transform,font-size] duration-300 ease-out group-hover/linkedin:left-8 group-hover/linkedin:text-[20px]">
             Linkedin
           </span>
           <img
             src={assets.icons.arrowNarrowRight}
             alt=""
-            className="size-4 visible opacity-100 transition-[visibility,opacity,transform] duration-300 ease-out group-hover/linkedin:invisible group-hover/linkedin:translate-x-3 group-hover/linkedin:opacity-0"
+            className="absolute right-5 size-5 transition-[right] duration-300 ease-out group-hover/linkedin:-right-7.5"
           />
         </a>
       </nav>
