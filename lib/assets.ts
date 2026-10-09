@@ -187,4 +187,7 @@ export const assets = {
   whatIf: {
     whatsappScheduling: "/assets/what-if/whatsapp-scheduling.svg",
   },
+  connect: {
+    lines: "/assets/connect/lines.svg",
+  },
 } as const;

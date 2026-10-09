@@ -24,7 +24,11 @@ export function ProjectCard({ project }: { project: Project }) {
           className="h-full w-full object-cover transition-transform duration-500 ease-out hover:scale-105"
         />
       </div>
-      <div className="flex flex-col gap-4 bg-mist px-5 py-5 justify-between h-full">
+      <div
+        className={`flex gap-4 bg-mist px-5 py-5 justify-between h-full ${
+          project.size === "full" ? "flex-row items-center" : "flex-col"
+        }`}
+      >
         <div className="flex flex-col gap-1.5">
           <span className="text-[10px] font-medium tracking-[-0.4px] text-ink-deep">
             {project.eyebrow}

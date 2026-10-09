@@ -2,7 +2,7 @@
 
 import { useConnectState } from "@/components/ConnectState";
 
-export function ConnectButton() {
+export function ConnectButton({ className = "" }: { className?: string }) {
   const { active, toggle } = useConnectState();
 
   return (
@@ -11,7 +11,7 @@ export function ConnectButton() {
       onClick={toggle}
       aria-label="Connect"
       aria-pressed={active}
-      className="group inline-grid rotate-6 place-items-center cursor-pointer"
+      className={`group inline-grid rotate-6 place-items-center cursor-pointer ${className}`}
     >
       <img
         src="/assets/connect-button-default.svg"
